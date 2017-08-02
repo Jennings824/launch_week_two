@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+    <h1>Recipe for <%= @name %></h1>
+
+    <ul>
+    <% @ingredients.each do |ingredient|%>
+      <li><%= ingredient %></li>
+      <% end %>
+    </ul>
+
+      <% @directions.each do |direction|%>
+        <ol><%= direction %></ol>
+        <% end %>
+  </body>
+</html>

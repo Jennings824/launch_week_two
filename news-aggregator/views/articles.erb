@@ -1,0 +1,19 @@
+<h1>Interesting Links</h1>
+
+<p>
+  Below is a list of interesting links:
+
+  <ul>
+    <% @articles.each do |article| %>
+    <li>
+        <!-- <% binding.pry %> -->
+        <%= article[:title]%>
+        <%= article[:url]%>
+        <%= article[:description]%>
+    </li>
+    <%end %>
+
+
+    </ul>
+
+</p>

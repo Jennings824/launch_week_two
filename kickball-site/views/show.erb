@@ -1,0 +1,12 @@
+<h1>
+  The team is <%= @individual_team %>
+
+</h1>
+
+<h2>
+  <%@roster.each do |player|%>
+  <%= player.name%>: <%= player.position%></br>
+  <% end %>
+</h2>
+
+<a href="/teams">All teams</a>

@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Teams in the LACKP</h1>
+
+  <ul>
+    <% @team_data.each do |team|%>
+    <a href="/teams/<%=team.name%>"</a>
+    <%= team.name%></br>
+    <% end %>
+  </ul>
+
+</body>
+</html>
